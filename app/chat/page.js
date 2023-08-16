@@ -2,7 +2,9 @@ import React from 'react'
 
 const Chat = () => {
     return (
-        <div>Chat</div>
+        <main className='min-h-full w-[100%] bg-black'>
+            chat
+        </main>
     )
 }
 

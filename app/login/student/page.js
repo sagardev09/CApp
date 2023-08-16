@@ -101,8 +101,8 @@ const page = () => {
                                 <p className=' text-zinc-500 text-sm '>Forgot Password?</p>
                             </a>
                         </div>
-                        <div className='flex items-center mt-5'>
-                            <Button color="primary" variant="shadow">
+                        <div className='flex items-center mt-5 w-[100%]'>
+                            <Button className="w-[100%]" color="primary" variant="shadow">
                                 Log In
                             </Button>
                         </div>
