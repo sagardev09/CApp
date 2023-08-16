@@ -7,7 +7,7 @@ const SideBar = () => {
         <div className=' border border-black h-[96vh] w-[12vw] p-4  rounded-xl '>
             <h4>App Name</h4>
             <div>
-                {/* <div>
+                <div>
                     <Image src={ } />
                     <h5></h5>
                 </div>
@@ -30,8 +30,10 @@ const SideBar = () => {
                 <div>
                     <Image src={ dsdnskhdk} />
                     <h5></h5>
-                </div> */}
+                </div>
             </div>
+
+
         </div>
     )
 }
