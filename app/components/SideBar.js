@@ -4,14 +4,8 @@ import Image from 'next/image'
 
 const SideBar = () => {
     return (
+
         <div className=' border border-black h-[96vh] w-[12vw] p-4  rounded-xl '>
-<<<<<<< HEAD
-            <h4>App Name</h4>
-            <div>
-                <div>
-                    <Image src={ } />
-                    <h5></h5>
-=======
             <h4>Capp</h4>
             <div className='flex flex-col justify-between h-full'>
                 <div className='flex flex-col gap-6 my-8'>
@@ -55,33 +49,37 @@ const SideBar = () => {
                         </svg>
                         <h5>Settings</h5>
                     </div>
->>>>>>> f9c5a04 (second commit)
                 </div>
-                <div>
-                    <Image src={ } />
-                    <h5></h5>
-                </div>
-                <div>
-                    <Image src={ } />
-                    <h5></h5>
-                </div>
-                <div>
-                    <Image src={ } />
-                    <h5></h5>
-                </div>
-                <div>
-                    <Image src={scsc } />
-                    <h5></h5>
-                </div>
-                <div>
-                    <Image src={ dsdnskhdk} />
-                    <h5></h5>
+                <div className='flex flex-col justify-start gap-4 mb-[60px]'>
+                    <div className='flex items-center justify-start gap-4 px-2 py-3 rounded-xl cursor-pointer'>
+                        <svg width="26" height="29" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clipPath="url(#clip0_1236_2421)">
+                                <path d="M7.5 12.45L1.98 7.45002C-1.02 4.45002 3.39 -1.30998 7.5 3.35002C11.61 -1.30998 16 4.47002 13.02 7.45002L7.5 12.45Z" stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1236_2421">
+                                    <rect width="14" height="14" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <h5>wishlist</h5>
+                    </div>
+                    <div className='flex items-center justify-start gap-4 px-2 py-3 rounded-xl cursor-pointer'>
+                        <svg width="26" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.6939 20.5155V22.555C18.6939 24.8042 16.8641 26.634 14.6149 26.634H4.36628C2.11703 26.634 0.287231 24.8042 0.287231 22.555V4.60719C0.287231 2.35793 2.11703 0.528137 4.36628 0.528137H14.6149C16.8641 0.528137 18.6939 2.35793 18.6939 4.60719V6.64671C18.6939 7.20997 18.2374 7.66647 17.6742 7.66647C17.1109 7.66647 16.6544 7.20997 16.6544 6.64671V4.60719C16.6544 3.48266 15.7394 2.56766 14.6149 2.56766H4.36628C3.24175 2.56766 2.32676 3.48266 2.32676 4.60719V22.555C2.32676 23.6795 3.24175 24.5945 4.36628 24.5945H14.6149C15.7394 24.5945 16.6544 23.6795 16.6544 22.555V20.5155C16.6544 19.9522 17.1109 19.4957 17.6742 19.4957C18.2374 19.4957 18.6939 19.9522 18.6939 20.5155ZM25.6464 11.8294L23.3629 9.54586C22.9646 9.14752 22.3189 9.14752 21.9207 9.54586C21.5224 9.94401 21.5224 10.5897 21.9207 10.9879L23.545 12.6123H11.3007C10.7374 12.6123 10.2809 13.0688 10.2809 13.6321C10.2809 14.1953 10.7374 14.6518 11.3007 14.6518H23.545L21.9207 16.2763C21.5224 16.6744 21.5224 17.3202 21.9207 17.7183C22.1199 17.9175 22.3808 18.0171 22.6417 18.0171C22.9028 18.0171 23.1638 17.9175 23.3629 17.7183L25.6464 15.4348C26.6405 14.4407 26.6405 12.8234 25.6464 11.8294Z" fill="black" />
+                        </svg>
+                        <h5>Logout</h5>
+                    </div>
                 </div>
             </div>
 
 
         </div>
+
     )
 }
 
 export default SideBar
+
+
+

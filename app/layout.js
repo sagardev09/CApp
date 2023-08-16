@@ -14,8 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className='flex  justify-start gap-8 p-7'>
-          {/* <SideBar /> */}
-
+          <SideBar />
           {children}
         </div>
       </body>
