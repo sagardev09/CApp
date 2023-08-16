@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import {Button} from "@nextui-org/react";
+import Link from 'next/link';
 
 
 const page = () => {
@@ -11,19 +12,20 @@ const page = () => {
     };
     return (
         <>
-            <section className='flex justify-between gap-20 px-10 w-[100%] h-[92vh] shadow-md bg-[#F6F6F6]'>
-                <div className='flex px-5 gap-10 py-5 w-[100%]  h-[100%] '>
-                    <div className='flex flex-col  justify-center px-4 '>
-                        <p className='text-[30px] text-black font-bold tracking-wider leading-tight'>Sign In to <br /> Resume your Journey</p>
-                        <p className='text-[16px] font-semibold tracking-wider mt-10 w-[300px] leading-none'>Welcome Back, Traineee Resume your Journey where you left your Progress</p>
+            <section className='flex px-10 w-[100%] h-[92vh] shadow-md bg-[#F6F6F6]'>
+                <div className='flex px-5 gap-5  py-5 w-[100%]  h-[100%] '>
+                    <div className='flex flex-col px-4 mt-36'>
+                        <p className='text-[45px] text-black font-bold tracking-wider leading-none'>Sign In to <br /> Resume your Journey</p>
+                        <p className='text-[16px] font-semibold tracking-wider mt-10 w-[390px] leading-none'>We're delighted to have you return to your learning journey with your course. Log in to continue your exploration of fascinating subjects, gain new skills.</p>
+                        <p className='mt-10 text-[14px] text-gray-600' >If you haven't joined us, <Link className='text-black font-semibold' href={"/signup/student"} >Register here</Link></p>
                     </div>
-                    <div className='mt-44'>
-                        <img className='w-[300px] h-[400px] ' src={"/loginimg.png"} alt="" />
+                    <div className='mt-52 '>
+                        <img className='w-[450px] h-[400px] bg-purple-500 ' src={"/loginimg.png"} alt="" />
                     </div>
                 </div>
                 {/* login details  */}
                 <div className='px-10 py-4 w-[70%] flex flex-col items-center justify-center '>
-                    <div className='flex flex-col w-[300px] px-4 py-5  shadow-lg'>
+                    <div className='flex flex-col w-[370px] px-4 py-8  shadow-lg'>
                         <div class="relative ">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 ">
                                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -31,7 +33,7 @@ const page = () => {
                                     <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
                                 </svg>
                             </div>
-                            <input type="text" class="focus:outline-none  text-white text-sm rounded-lg block w-full pl-10  py-3 border border-gray-200 placeholder-gray-400 " placeholder="name@gmail.com" />
+                            <input type="text" className="focus:outline-none  text-gray-400 text-sm rounded-lg block w-full pl-10  py-3 border border-gray-200 placeholder-gray-400 " placeholder="name@gmail.com" />
                         </div>
 
                         <div className="relative mt-5">
@@ -39,8 +41,8 @@ const page = () => {
                                 id="password"
                                 type={showPassword ? 'text' : 'password'}
                                 className="w-full px-4 py-2 border rounded-md focus:outline-none"
-                                placeholder="Password" />
-                            <button className="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-600"
+                                placeholder="Password"  />
+                            <button className="absolute top-3 right-4 transform  text-gray-600"
                                 onClick={togglePasswordVisibility}>
                                 {showPassword ? (
                                     <svg
@@ -112,7 +114,7 @@ const page = () => {
                         </div>
 
 
-                        <div className='flex justify-center items-center gap-4 py-3  '>
+                        <div className='flex justify-center gap-4 py-3 mt-5 '>
                             <a className=' px-4 rounded-lg shadow-lg hover:shadow-xl hover:shadow-gray-300' href="/">
                                 <svg className='w-[25px] py-1' viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z" fill="#4285F4" />
