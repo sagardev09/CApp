@@ -1,6 +1,7 @@
 import SideBar from './components/SideBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Providers } from './provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,10 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='flex  justify-start gap-8 p-7'>
-          <SideBar />
-          {children}
-        </div>
+        <Providers>
+          <div className='flex  justify-start gap-8 p-7 min-h-screen w-full'>
+            <SideBar />
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   )
