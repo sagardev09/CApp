@@ -9,21 +9,27 @@ const SideBar = () => {
             <div>
                 <div>
                     <Image src={ } />
+                    <h5></h5>
                 </div>
                 <div>
                     <Image src={ } />
+                    <h5></h5>
                 </div>
                 <div>
                     <Image src={ } />
+                    <h5></h5>
                 </div>
                 <div>
                     <Image src={ } />
+                    <h5></h5>
                 </div>
                 <div>
-                    <Image src={ } />
+                    <Image src={scsc } />
+                    <h5></h5>
                 </div>
                 <div>
-                    <Image src={ } />
+                    <Image src={ dsdnskhdk} />
+                    <h5></h5>
                 </div>
             </div>
         </div>
