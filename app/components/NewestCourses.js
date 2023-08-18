@@ -1,8 +1,9 @@
 import React from 'react'
+import NewstCourseCar from './NewstCourseCar'
 
 const NewestCourses = () => {
     return (
-        <div>NewestCourses</div>
+        <NewstCourseCar />
     )
 }
 

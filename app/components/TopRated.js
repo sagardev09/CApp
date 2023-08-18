@@ -1,8 +1,9 @@
 import React from 'react'
+import TopRatedCard from './TopRatedCard'
 
 const TopRated = () => {
     return (
-        <div>TopRated</div>
+        <TopRatedCard />
     )
 }
 

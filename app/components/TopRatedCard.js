@@ -1,7 +1,7 @@
 import React from 'react'
 import AllCoursesCard from './AllCoursesCard'
 
-const AllCourses = () => {
+const TopRatedCard = () => {
     return (
         <div className='flex flex-col gap-4 overflow-y-scroll h-[420px] mt-2'>
             <AllCoursesCard />
@@ -9,4 +9,4 @@ const AllCourses = () => {
     )
 }
 
-export default AllCourses
+export default TopRatedCard

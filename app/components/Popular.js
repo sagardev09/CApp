@@ -1,8 +1,9 @@
 import React from 'react'
+import PopularCard from './PopularCard'
 
 const Popular = () => {
     return (
-        <div>Popular</div>
+        <PopularCard />
     )
 }
 

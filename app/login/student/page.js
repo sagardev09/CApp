@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import {Button} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Link from 'next/link';
 
 
@@ -17,7 +17,7 @@ const page = () => {
                     <div className='flex flex-col px-4 mt-36'>
                         <p className='text-[45px] text-black font-bold tracking-wider leading-none'>Sign In to <br /> Resume your Journey</p>
                         <p className='text-[16px] font-semibold tracking-wider mt-10 w-[390px] leading-none'>We're delighted to have you return to your learning journey with your course. Log in to continue your exploration of fascinating subjects, gain new skills.</p>
-                        <p className='mt-10 text-[14px] text-gray-600' >If you haven't joined us, <Link className='text-black font-semibold' href={"/signup/student"} >Register here</Link></p>
+                        <p className='mt-10 text-[14px] text-gray-600' >If you haven't joined us, <Link className='text-black font-semibold underline ' href={"/signup/student"} >Register here</Link></p>
                     </div>
                     <div className='mt-52 '>
                         <img className='w-[450px] h-[400px] bg-purple-500 ' src={"/loginimg.png"} alt="" />
@@ -25,7 +25,7 @@ const page = () => {
                 </div>
                 {/* login details  */}
                 <div className='px-10 py-4 w-[70%] flex flex-col items-center justify-center '>
-                    <div className='flex flex-col w-[370px] px-4 py-8  shadow-lg'>
+                    <div className='flex flex-col w-[370px] px-4 py-8  shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.5)_0px_3px_7px_-3px]'>
                         <div class="relative ">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 ">
                                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -37,11 +37,12 @@ const page = () => {
                         </div>
 
                         <div className="relative mt-5">
+                           
                             <input
                                 id="password"
                                 type={showPassword ? 'text' : 'password'}
-                                className="w-full px-4 py-2 border rounded-md focus:outline-none"
-                                placeholder="Password"  />
+                                className="w-full pl-10 py-2 border rounded-md focus:outline-none"
+                                placeholder="Password" />
                             <button className="absolute top-3 right-4 transform  text-gray-600"
                                 onClick={togglePasswordVisibility}>
                                 {showPassword ? (
@@ -100,7 +101,7 @@ const page = () => {
 
                         <div className='flex justify-end mt-2'>
                             <a href="/">
-                                <p className=' text-zinc-500 text-sm '>Forgot Password?</p>
+                                <p className=' text-zinc-500 text-sm hover:underline'>Forgot Password?</p>
                             </a>
                         </div>
                         <div className='flex items-center mt-5 w-[100%]'>
