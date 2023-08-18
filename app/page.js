@@ -77,7 +77,7 @@ export default function Home() {
           </div>
           <div>
             <div className='flex gap-2 justify-center items-center'>
-              <Image src={arr} className='h-[40px] w-[80px] transform scale-x-[-1] cursor-pointer' alt='' />
+              <Image src={arr} className='h-[40px] w-[80px] transform  cursor-pointer' alt='' />
               <Image src={arr} className='h-[40px] w-[80px] cursor-pointer' alt='' />
             </div>
           </div>
