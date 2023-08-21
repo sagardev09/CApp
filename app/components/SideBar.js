@@ -14,7 +14,7 @@ const SideBar = () => {
 
     return (
 
-        <div className={` border ${dark ? "bg-[#272829]" : "bg-[#5A96E3]"}  h-[94.5vh] w-[280px] p-4 rounded-xl `}>
+        <div className={pathname=== "/login" || pathname=== "/login/student" || pathname=== "/login/teacher" || pathname=== "/signup/student" || pathname=== "/signup/teacher" ? "hidden"  : ` border ${dark ? "bg-[#272829]" : "bg-[#5A96E3]"}  h-[94.5vh] w-[280px] p-4 rounded-xl ` }>
             <h4>Capp</h4>
             <div className='flex flex-col justify-between h-full'>
                 <div className='flex flex-col gap-6 my-8'>
